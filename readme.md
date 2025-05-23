@@ -23,7 +23,7 @@
   - the ordered quantity  
   - the price  
 - The **total in the order summary** should be calculated  
-- For orders **over ₹1000**, apply a **18% GST** to the order  
-  - Display the **TAX text** only if a GST has been applied  
-- The **total should reflect any GST** that has been applied  
+- For orders **over ₹1000**, apply a **18% TAX** to the order  
+  - Display the **TAX text** only if a TAX has been applied  
+- The **total should reflect any TAX** that has been applied  
 - All **Rupees amounts** should be displayed to **2 decimal places**  

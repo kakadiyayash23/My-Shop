@@ -81,7 +81,7 @@ describe('Checkout Component', () => {
     expect(decrementButton).toBeDisabled();
   });
 
-  it('does not apply GST when total is below ₹1000', async () => {
+  it('does not apply TAX when total is below ₹1000', async () => {
     render(<Checkout />);
     
     await waitFor(() => {
@@ -94,10 +94,10 @@ describe('Checkout Component', () => {
       fireEvent.click(incrementButton);
     }
 
-    // GST should not be displayed
-    expect(screen.queryByText('GST (18%):')).not.toBeInTheDocument();
+    // TAX should not be displayed
+    expect(screen.queryByText('TAX (18%):')).not.toBeInTheDocument();
     
-    // Check total without GST (200)
+    // Check total without TAX (200)
     expect(screen.getByText('₹ 200.00')).toBeInTheDocument();
   });
 

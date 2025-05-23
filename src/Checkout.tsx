@@ -83,7 +83,7 @@ return (
             <div className="order-details">
               <h2>Order Details</h2>
                 <div className="detail-row">
-                  <span className="gst-applied">TAX (18%):</span>
+                  <span className="tax-applied">TAX (18%):</span>
                   <span>₹ 00</span>
                 </div>
               <div className="total-row">
