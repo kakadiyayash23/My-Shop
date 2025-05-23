@@ -58,14 +58,13 @@ const Product: React.FC<ProductProps> = ({
 };
 
 const Checkout: React.FC = () => {
-return (<LoadingIcon isLoading={true} />);
-  return (
+return (
     <div>
+      <LoadingIcon isLoading={true} />
       <header className="header">
-        <h1>My Bajar Shop</h1>
+        <h1>My Shop</h1>
       </header>
       <main>
-        
           <>
             <table className="table">
               <thead>
@@ -79,13 +78,10 @@ return (<LoadingIcon isLoading={true} />);
                   <th></th>
                 </tr>
               </thead>
-              <tbody>
-                
-              </tbody>
+              <tbody></tbody>
             </table>
             <div className="order-details">
               <h2>Order Details</h2>
-              
                 <div className="detail-row">
                   <span className="gst-applied">TAX (18%):</span>
                   <span>₹ 00</span>
